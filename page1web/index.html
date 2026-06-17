@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none';
+                 script-src 'self';
+                 style-src 'self' https://fonts.googleapis.com;
+                 font-src https://fonts.gstatic.com;
+                 img-src 'self';
+                 connect-src 'none';
+                 base-uri 'self';
+                 form-action 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Folio Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Folio Coffee</a>
+      <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="primary-nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Brewed with<br>intention</h1>
+        <p class="hero-sub">Single origin. Minimal process. Maximum clarity.</p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+      <div class="hero-ring-wrap">
+        <div class="hero-ring"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-inner">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>We source beans from a single farm each season. Our process strips away everything unnecessary — leaving only what the bean wants to say. No milk. No syrups. No noise.</p>
+        </div>
+        <div class="about-scene">
+          <div class="cube-wrap">
+            <div class="cube">
+              <div class="face face-front"></div>
+              <div class="face face-back"></div>
+              <div class="face face-left"></div>
+              <div class="face face-right"></div>
+              <div class="face face-top"></div>
+              <div class="face face-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="section-inner">
+        <h2>The Menu</h2>
+        <div class="menu-grid">
+          <div class="card">
+            <div class="card-name">Espresso</div>
+            <div class="card-desc">Concentrated. Exact. No compromise.</div>
+            <div class="card-price">$3.50</div>
+          </div>
+          <div class="card">
+            <div class="card-name">Pour Over</div>
+            <div class="card-desc">Slow extraction. Clarity in every cup.</div>
+            <div class="card-price">$5.00</div>
+          </div>
+          <div class="card">
+            <div class="card-name">Cold Brew</div>
+            <div class="card-desc">18-hour steep. Dark and unhurried.</div>
+            <div class="card-price">$4.50</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="section-inner">
+        <h2>The Process</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div class="step-body">
+              <h3>Source</h3>
+              <p>Direct relationships with farms in Ethiopia and Colombia.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <div class="step-body">
+              <h3>Roast</h3>
+              <p>Light to medium only. We let the origin speak.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <div class="step-body">
+              <h3>Brew</h3>
+              <p>Precision temperature. Consistent grind. Nothing hidden.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>123 Roaster Lane, Portland OR</p>
+      <p>Mon–Sat 7am–5pm</p>
+    </div>
+  </footer>
+
+</body>
+</html>
